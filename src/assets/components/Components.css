@@ -1,0 +1,212 @@
+.space {
+    display: inline-block;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+.space.clicked {
+    transform: scale(1.2); /* Escala cuando se hace clic */
+    background-color: #f0f0f0; /* Color de fondo al hacer clic */
+}
+.clicked {
+    transform: scale(1.2);
+    background-color: #f0f0f0;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.selected-char {
+    border: 1px dashed blue;
+    padding: 2px;
+}
+/* Contenedor principal que organiza en un grid */
+.container {
+   
+    justify-content: center;
+    align-items: center;
+  }
+
+.box {
+  
+    display: flex;
+    width: 2000;
+    margin: auto;
+}
+
+.boxes {
+   
+    display: flex;
+    width: 2000;
+    margin: auto;
+}
+
+.container .boxes .left {
+    
+    width: 500px;
+    height: 500px;
+}
+
+.container .boxes .right {
+    
+    width: 600px;
+}
+
+.text-gradient {
+    color: aliceblue;
+    padding: 10px;
+    
+}
+
+.downBad {
+    padding-top:10%;
+}
+
+#textArea {
+    font-family: "Noto Sans Thai", sans-serif;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+  }
+
+.footer{
+   
+    display: flex;
+}
+
+.finalText{
+
+    color: #f0f0f0;
+    margin-top: -10%;
+    margin-left: 30%;
+}
+  
+
+.logoF{
+  
+    height: 40px;
+    padding-top: -40%;
+    margin-left: 27%;
+    background-color: transparent;
+    filter: invert(95%) sepia(13%) saturate(211%) hue-rotate(107deg) brightness(108%) contrast(97%);
+    margin: 4px;
+}
+
+/* Para pantallas menores a 1200px */
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: #8d52fd;
+    }
+    .box, .boxes {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .boxes .left, 
+    .container .boxes .right {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* Para tablets (pantallas menores a 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #8d52fd;
+    }
+    .container {
+        flex-direction: column;
+    }
+
+    .finalText {
+        margin-top: 5%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .logoF {
+        margin-left: 0;
+    }
+}
+
+/* Para móviles (pantallas menores a 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        background-color: #8d52fd;
+    }
+    .text-gradient {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .finalText {
+        font-size: 12px;
+        margin-top: 2%;
+    }
+
+    .logoF {
+        height: 30px;
+    }
+}
+
+/* Para pantallas menores a 1200px */
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: #8d52fd;
+    }
+    .box, .boxes {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .boxes .left, 
+    .container .boxes .right {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* Para tablets (pantallas menores a 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #8d52fd;
+    }
+    .container {
+        flex-direction: column;
+    }
+
+    .finalText {
+        margin-top: 5%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .logoF {
+        margin-left: 0;
+    }
+}
+
+/* Para móviles (pantallas menores a 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        background-color: #8d52fd;
+    }
+    .text-gradient {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .finalText {
+        font-size: 12px;
+        margin-top: 2%;
+    }
+
+    .logoF {
+        height: 30px;
+    }
+}
